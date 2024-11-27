@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+:root{
+    /* COLORS */
+    --LIGHT-RED: hsl(0, 100%, 67%);
+    --LIGHT-RED-BACKGROUND: hsla(0, 100%, 67%, 0.100);
+    --ORANGEY-YELLOW: hsl(39, 100%, 56%);
+    --ORANGEY-YELLOW-BACKGROUND: hsla(39, 100%, 56%, 0.100);
+    --GREEN-TEAL: hsl(166, 100%, 37%);
+    --GREEN-TEAL-BACKGROUND: hsla(166, 100%, 37%, 0.100);
+    --COBALT-BLUE: hsl(234, 85%, 45%);
+    --COBALT-BLUE-BACKGROUND: hsla(234, 85%, 45%, 0.100);
+    /* GRADIENTS */
+    --LIGHT-SLATE-BLUE:  hsl(252, 100%, 67%);
+    --LIGHT-ROYAL-BLUE: hsl(241, 81%, 54%);
+    
+    --VIOLET-BLUE: hsla(256, 72%, 46%, 1);
+    --PERSIAN-BLUE: hsla(241, 72%, 46%, 0);
+    /* NEUTRAL */
+    --WHITE: hsl(0, 0%, 100%);
+    --PALE-BLUE: hsl(221, 100%, 96%);
+    --LIGHT-LAVENDER: hsl(241, 100%, 89%);
+    --DARK-GRAY-BLUE: hsl(224, 30%, 27%);
+    --LIGHT-GRAY-BLUE: hsla(224, 30%, 27%, 0.500);
+
+    /* FONT-WEIGHT */
+    --LIGHT: 500;
+    --BOLD: 700;
+    --BOLDER: 800;
+}
+body{
+    font-family: 'Hanken Grotesk', serif;
+    height: 100%;
+}
+.box{
+    max-height: 50vh;
+    background-image: linear-gradient(to top,
+    var(--LIGHT-ROYAL-BLUE),var(--LIGHT-SLATE-BLUE));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--WHITE);
+    border-radius: 0rem 0rem 2rem 2rem;
+}
+.text{
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: var(--BOLD);
+    font-size: 1.3rem;
+}
+.circle{
+    height: 8rem;
+    width: 8rem;
+    background-image: linear-gradient(var(--VIOLET-BLUE),var(--PERSIAN-BLUE));
+    border-radius: 4rem;
+    display: grid;
+    place-content: center;
+    margin: 2rem 0rem 1rem 0rem;
+}
+h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+.circle p{
+    padding: 0% 10%;
+}
+.box-text{
+    margin: 0.8rem 0rem 2rem 0rem;
+}
+h3{
+    padding: 1rem 0rem 1rem 1.6rem;
+}
+table{
+    margin: auto;
+    width: 90%;
+    font-weight: bold;
+}
+tr,td{
+    padding: 0.6rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.6rem;
+    justify-content: space-between;
+    row-gap: 10px;
+
+}
+span{
+    color: var(--DARK-GRAY-BLUE);
+}
+.grey{
+    color: var(--LIGHT-GRAY-BLUE);
+}
+.red{
+    background-color: var(--LIGHT-RED-BACKGROUND);
+    color: var(--LIGHT-RED);
+    text-align: left;
+    border: 5px solid var(--WHITE);
+}
+.yellow{
+    background-color: var(--ORANGEY-YELLOW-BACKGROUND);
+    color: var(--ORANGEY-YELLOW);
+    border: 5px solid var(--WHITE);
+}
+.teal{
+    background-color: var(--GREEN-TEAL-BACKGROUND);
+    color: var(--GREEN-TEAL);
+    border: 5px solid var(--WHITE);
+}
+.blue{
+    background-color: var(--COBALT-BLUE-BACKGROUND);
+    color: var(--COBALT-BLUE);
+    border: 5px solid var(--WHITE);
+}
+.button{
+    height: 4rem;
+    background-color: var(--DARK-GRAY-BLUE);
+    width: 86%;
+    color: var(--WHITE);
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: grid;
+    place-content: center;
+    margin: 1rem auto;
+    border-radius: 2rem;
+}
+footer{
+    padding: 0rem 1.6rem;
+    margin-bottom: 1rem;
+}
+.footer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--COBALT-BLUE-BACKGROUND);
+    height: 6rem;
+    border-radius: 0.6rem;
+    padding: 0.8rem;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.button:active{
+    background-color: var(--LIGHT-ROYAL-BLUE);
+}
+@media (min-width: 600px) {
+    table{
+        width: 96%;
+        font-size: 1.8rem;
+    }
+    .box{
+        height: 80vh;
+        justify-content: space-evenly;
+        .text{
+            font-size: 2.6rem;
+        }
+        .circle{
+            max-height: 12rem;
+            max-width: 12rem;
+            border-radius: 50%;
+            margin-bottom: 4rem;
+        }
+        h2{
+            font-size: 2.4rem;
+        }
+        .box-text{
+            font-size: 1.6rem;
+        }
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .red,.blue,.yellow,.teal{
+        border: 10px solid var(--WHITE);
+    }
+    tr{
+        border-radius: 1.4rem;
+    }
+    .button{
+        height: 5rem;
+        font-size: 2rem;
+    }
+
+    .footer-div{
+        height: 5rem;
+        font-size: 1.6rem;
+    }
+}
+@media (min-width: 800px) {
+    table{
+        width: 96%;
+        font-size: 1.8rem;
+    }
+    .box{
+        height: 80vh;
+        justify-content: space-evenly;
+        .text{
+            font-size: 2.6rem;
+        }
+        .circle{
+            max-height: 14rem;
+            max-width: 14rem;
+            border-radius: 50%;
+            margin-bottom: 4rem;
+        }
+        h2{
+            font-size: 2.4rem;
+        }
+        .box-text{
+            font-size: 1.6rem;
+        }
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .red,.blue,.yellow,.teal{
+        border: 10px solid var(--WHITE);
+    }
+    tr{
+        border-radius: 1.4rem;
+    }
+    .button{
+        height: 5rem;
+        font-size: 2rem;
+    }
+
+    .footer-div{
+        height: 5rem;
+        font-size: 1.6rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    body{
+        height: 100%;
+        background-color: whitesmoke;
+    }
+    main{
+        margin: 2rem;
+        padding: 1.5rem;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        display: flex;
+        max-width: 2377px;
+        max-height: 2053px;
+        background-color: var(--WHITE);
+        border-radius: 2rem 2rem 2rem 2rem;
+    }
+    .box{
+        max-height: 100vh;
+        border-radius: 2rem;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-1{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0rem;
+        background-color: var(--WHITE);
+        border-radius: 0rem 2rem 2rem 0rem;
+        justify-content: space-evenly;
+        gap: 2rem;
+
+    }
+    .text{
+        font-size: 4rem;
+    }
+    .circle{
+        height: 14rem;
+        width: 14rem;
+        border-radius: 50%;
+    }
+    h3{
+        text-align: left;
+        padding: 0rem 0rem 1rem 1.6rem;
+    }
+    .box-text{
+        text-align: center;
+    }
+    .button{
+        height: 6rem;
+        font-size: 2rem;
+    }
+    .break{
+        display: none;
+    }
+}
