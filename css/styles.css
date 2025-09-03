@@ -176,7 +176,7 @@ main {
     font-weight: bold;
     align-self: flex-end;
     justify-self: center;
-    width: max-content;
+    width: 35rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -195,6 +195,10 @@ main {
 }
 .button:active{
     background-color: var(--LIGHT-ROYAL-BLUE);
+}
+footer {
+    display: grid;
+    place-content: center;
 }
 @media (min-width: 640px) {
     h3 {
